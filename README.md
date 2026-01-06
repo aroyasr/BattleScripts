@@ -4,7 +4,7 @@ BattleScripts is a game based on the iterated prisoner's dillemma, a thought exp
 
 BattleScripts will run on the Lead Mentor's laptop and be played on a big screen. Students will work on their scripts on their own laptops and turn in their .py files to compete.
 
-Students that do this excersize should become more familiar with the concept of functions, returning variables, storing variables, getting data, and conditional statements.
+Students that do this excersize should become more familiar with the concept of functions, returning variables, storing variables, getting data, and conditional statements. They should also gain a better understanding of writing pseudocode, and planning in advance.
 
 ## gm_main
 

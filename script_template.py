@@ -1,11 +1,6 @@
 ########################
 ## script_template.py ##
 ########################
-
-NAME = "" 
-STEAL = 0
-SUPPORT = 1
-
 # Hello student!
 # Welcome to BattleScripts! This is the file template for your script that you will submit as your BattleScript.
 
@@ -13,21 +8,22 @@ SUPPORT = 1
 # Your script will decide what to do each turn. It's up to you to come up with a strategy, think about how to 
 # write it in code, and write the code. Go through the task list to begin.
 
-
-
 """ TASK LIST: (Put X inside square brackets once you have completed the task.)
-- Be awesome [X]
+- Plan out your strategy on paper []
+- Write your pseudocode on paper []
 - Rename this file []
-- Change the NAME variable at the top of this script []
-- Plan out your strategy in the script_planning.txt file []
+- Change the NAME constant []
 - Ensure that the main function always returns STEAL or SUPPORT []
 """
 
 
 
+# Constants 
+NAME = "" 
+STEAL = 0       # Don't change these numbers...
+SUPPORT = 1     # Unless you like ugly code and confusing yourself!
 
-
-### Default Variables (These are automatically managed for you)
+# Variables (Do not modify)
 my_money          #How much money your script currently has in the match
 their_money       #How much money the other script currently has in the match
 
@@ -43,7 +39,7 @@ meaning_of_life = 42
 
 #### Main Function (Write your code here) ##########################################
 # This is the code that runs every turn to decide what to do.
-# This function MUST return STEAL or return SUPPORT. Otherwise an error will happen.
+# This function MUST return STEAL or return SUPPORT. Otherwise an error will occur.
 ####################################################################################
 
 def steal_or_support():
