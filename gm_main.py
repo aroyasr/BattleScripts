@@ -14,10 +14,6 @@ from pathlib import Path
 STEAL = 0
 SUPPORT = 1
 
-# Variables
-p1_main
-p2_main
-
 class PlayerWrapper:
     """Loads a student script and manages its state."""
 

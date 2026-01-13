@@ -19,7 +19,6 @@
 
 
 # Constants 
-NAME = "" 
 STEAL = 0       # Don't change these numbers...
 SUPPORT = 1     # Unless you like ugly code and confusing yourself!
 
