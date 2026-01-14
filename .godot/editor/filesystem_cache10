@@ -1,21 +1,22 @@
-63f7b34db8d8cdea90c76aacccf841ec
-::res://::1768364032
-icon.svg::CompressedTexture2D::5472655624712540288::1768358878::1768359420::1::::<><><>0<>0<>1d156bf563253a0617a7a153fb6989fa<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-package-lock.json::JSON::-1::1768360251::0::1::::<><><>0<>0<><>::
-README.md::TextFile::-1::1767747221::0::1::::<><><>0<>0<><>::
-root.tscn::PackedScene::767594794523004977::1768361494::0::1::::<><><>0<>0<><>::uid://c714u4ixw5bs::::res://godot_script/root.gd<>uid://b5hr7s53alprh::::res://Assets/half-txt-dm-fix.png
-StudentGuide.md::TextFile::-1::1767743367::0::1::::<><><>0<>0<><>::
-::res://Assets/::1768362422
-1832-531-max.png::CompressedTexture2D::810772163498509081::1768270566::1768359419::1::::<><><>0<>0<>d1657b042c6ca1f81a670744e0b2d351<>res://.godot/imported/1832-531-max.png-74da349692e4186317de77048457c360.ctex::
-FaceType - PublicaPlay-Regular.otf::FontFile::5402188691031541244::1768362390::1768362422::1::::<><><>0<>0<>4516b2aa8000cd21445549e1bebfd216<>res://.godot/imported/FaceType - PublicaPlay-Regular.otf-e76b9cfc59fe22991c2cf8aee9b156d6.fontdata::
-half-txt-dm-fix.png::CompressedTexture2D::4507626964431554781::1768358385::1768359419::1::::<><><>0<>0<>8a4d2071208ff3142607881de61114a4<>res://.godot/imported/half-txt-dm-fix.png-67c88af0882959dac1c79fae7764e1a0.ctex::
-::res://godot_script/::1768361469
-root.gd::GDScript::208069300902597132::1768361469::0::1::::<>Control<><>0<>0<><>::
-::res://python_script/::1768358422
-::res://scenes/::1768361553
-main_menu.tscn::PackedScene::913477212555892697::1768361553::0::1::::<><><>0<>0<><>::
-::res://Visual Mockups/::1768361526
-Main Menu Mockup.png::CompressedTexture2D::4786227959200678965::1768270566::1768361526::1::::<><><>0<>0<>7e4655ee8f72ad9e0898afe82faaa529<>res://.godot/imported/Main Menu Mockup.png-1267e7a751893ec7f9e35511ccd57980.ctex::
-MenuOverlay_1.png::CompressedTexture2D::6195639494457769260::1768270566::1768361525::1::::<><><>0<>0<>84a3c861e546dbc677b63f7fae6eff15<>res://.godot/imported/MenuOverlay_1.png-e1d9a1424c978d85ca163942148d58e0.ctex::
-MenuOverlay_2.png::CompressedTexture2D::2592749820812318882::1768270566::1768361525::1::::<><><>0<>0<>7841f9fe97f549c66dd83a6f68b2a066<>res://.godot/imported/MenuOverlay_2.png-1c820d452f4584d2ea7a82b26d01cae4.ctex::
-MenuOverlay_3.png::CompressedTexture2D::4912591710146431117::1768270566::1768361526::1::::<><><>0<>0<>6ceb416a509db51f3228fc3f2585371b<>res://.godot/imported/MenuOverlay_3.png-6787095933757c307989745c9e8ae972.ctex::
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1768368667
+icon.svg::CompressedTexture2D/CompressedTexture2D::5472655624712540288::1768364259::1768364348::1::::<><><>0<>0<>f145bb6033f6e77ed5ab1df4f2b110f0<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+package-lock.json::JSON/JSON::-1::1768364259::0::1::::<><><>0<>0<><>::
+README.md::TextFile/TextFile::-1::1767743488::0::1::::<><><>0<>0<><>::
+StudentGuide.md::TextFile/TextFile::-1::1767743488::0::1::::<><><>0<>0<><>::
+::res://Assets/::1768368264
+1832-531-max.png::CompressedTexture2D/CompressedTexture2D::810772163498509081::1767744714::1768364348::1::::<><><>0<>0<>6e5c47ac7417d50685ab6f3a13dd1390<>res://.godot/imported/1832-531-max.png-74da349692e4186317de77048457c360.ctex::
+FaceType - PublicaPlay-Regular.otf::FontFile/FontFile::5402188691031541244::1768364259::1768364348::1::::<><><>0<>0<>231fc4157ec19efea6b90cdbdcd0d7ac<>res://.godot/imported/FaceType - PublicaPlay-Regular.otf-e76b9cfc59fe22991c2cf8aee9b156d6.fontdata::
+half-txt-dm-fix.png::CompressedTexture2D/CompressedTexture2D::4507626964431554781::1768369479::1768369487::1::::<><><>0<>0<>41b06401446ab1769d1db69e8781f8e5<>res://.godot/imported/half-txt-dm-fix.png-67c88af0882959dac1c79fae7764e1a0.ctex::
+menu_theme.tres::Theme/Theme::4169277716183471977::1768368264::0::1::::<><><>0<>0<><>::uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf
+::res://godot_script/::1768369131
+GameController.gd::GDScript::208069300902597132::1768369131::0::1::::GameController<>Node<><>0<>0<><>::
+::res://python_script/::1768364259
+::res://scenes/::1768369282
+GameController.tscn::PackedScene::767594794523004977::1768369282::0::1::::<><><>0<>0<><>::uid://c714u4ixw5bs::::res://godot_script/GameController.gd
+main_menu.tscn::PackedScene::913477212555892697::1768369282::0::1::::<><><>0<>0<><>::uid://b0nvnopbrupa4::::res://Assets/menu_theme.tres<>uid://cujhjosgr4r21::::res://Visual Mockups/MenuOverlay_1.png<>uid://bc67hfvb3x8nm::::res://Visual Mockups/MenuOverlay_2.png<>uid://cb8xwx5mjgma4::::res://Visual Mockups/MenuOverlay_3.png<>uid://b5hr7s53alprh::::res://Assets/half-txt-dm-fix.png
+::res://Visual Mockups/::1768364348
+Main Menu Mockup.png::CompressedTexture2D/CompressedTexture2D::4786227959200678965::1767746044::1768364348::1::::<><><>0<>0<>084acb24dacb64aba861fa65c8bde014<>res://.godot/imported/Main Menu Mockup.png-1267e7a751893ec7f9e35511ccd57980.ctex::
+MenuOverlay_1.png::CompressedTexture2D/CompressedTexture2D::6195639494457769260::1767745996::1768364348::1::::<><><>0<>0<>5ea68c008b5103d024f41e54f427925a<>res://.godot/imported/MenuOverlay_1.png-e1d9a1424c978d85ca163942148d58e0.ctex::
+MenuOverlay_2.png::CompressedTexture2D/CompressedTexture2D::2592749820812318882::1767746005::1768364348::1::::<><><>0<>0<>71b0275ea37911903a215561b27ce2f5<>res://.godot/imported/MenuOverlay_2.png-1c820d452f4584d2ea7a82b26d01cae4.ctex::
+MenuOverlay_3.png::CompressedTexture2D/CompressedTexture2D::4912591710146431117::1767746013::1768364348::1::::<><><>0<>0<>9f675a8b571a1802e608f91a274cd061<>res://.godot/imported/MenuOverlay_3.png-6787095933757c307989745c9e8ae972.ctex::

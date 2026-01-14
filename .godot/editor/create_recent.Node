@@ -1,4 +1,10 @@
+TextureRect
+Node
+Control
+AnimationPlayer
+CenterContainer
+Container
+VBoxContainer
 Button
 Label
 PanelContainer
-CenterContainer

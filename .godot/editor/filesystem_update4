@@ -1,1 +1,6 @@
+res://scenes/main_menu.tscn
+res://Assets/menu_theme.tres
 res://root.tscn
+res://godot_script/root.gd
+res://scenes/GameController.tscn
+res://godot_script/GameController.gd
