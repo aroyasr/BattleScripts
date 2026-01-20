@@ -1,3 +1,9 @@
+Button
+CheckBox
+CheckButton
+HBoxContainer
+Label
+TextureButton
 TextureRect
 Node
 Control
@@ -5,6 +11,4 @@ AnimationPlayer
 CenterContainer
 Container
 VBoxContainer
-Button
-Label
 PanelContainer

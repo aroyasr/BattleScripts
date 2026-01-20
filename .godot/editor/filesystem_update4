@@ -1,6 +1,10 @@
-res://scenes/main_menu.tscn
-res://Assets/menu_theme.tres
-res://root.tscn
-res://godot_script/root.gd
 res://scenes/GameController.tscn
+res://Assets/menu_theme.tres
 res://godot_script/GameController.gd
+res://scenes/main_menu.tscn
+res://godot_script/main_menu.gd
+res://scenes/match_setup.tscn
+res://Assets/match_theme.tres
+res://scenes/Global.tscn
+res://godot_script/global.gd
+res://godot_script/match_setup.gd
