@@ -14,15 +14,3 @@ Students that do this excersize should become more familiar with the concept of 
 
 script_template.py is a template for the students battlescript that they will submit. It includes some functions and variables by default for them to fill out. The main function is run each turn.
 
-The script will need to be able to:
-
-- Provide an empty main function that returns STEAL or SUPPORT
-
-- Provide variables for:
-    - current turn
-    - their money
-    - my money
-    - their recent turns
-    - my recent turns
-
-- Provide function for updating all variables
