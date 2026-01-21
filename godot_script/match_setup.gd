@@ -47,7 +47,7 @@ func validate_script(path: String):
 			print("Validation errors:")
 			for error in pystdout:
 				$Window_errormsg.add_error(error)
-			$Window_errormsg.visible = true
+			$Window_errormsg.show()
 		return null
 	
 	# Validation passed - extract script name from output
