@@ -33,8 +33,13 @@ func validate_script(path: String):
 	var validator_script = ProjectSettings.globalize_path("res://python_script/file_validator.py")
 	var script_path = ProjectSettings.globalize_path(path)
 	
-	var result = OS.execute("python", [validator_script, script_path], pystdout)
+	# Detect OS and use appropriate Python command
+	var python_cmd = "python"
+	if OS.get_name() in ["Linux", "FreeBSD", "NetBSD", "OpenBSD", "BSD"]:
+		python_cmd = "python3"
 	
+	var result = OS.execute(python_cmd, [validator_script, script_path], pystdout)
+	$Window_errormsg.clear_errors()
 	# Check if execution was successful (return code 0)
 	if result != 0:
 		# Validation failed - print errors

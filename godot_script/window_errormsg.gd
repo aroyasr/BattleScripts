@@ -9,6 +9,11 @@ func add_error(errormsg: String):
 	var error = Label.new()
 	error.text = errormsg
 	$PanelContainer/VBoxContainer.add_child(error)
+	
+func clear_errors():
+	for n in $PanelContainer/VBoxContainer.get_children():
+		$PanelContainer/VBoxContainer.remove_child(n)
+		n.queue_free()
 
 func _on_close_requested() -> void:
 	self.hide()
