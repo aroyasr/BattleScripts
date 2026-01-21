@@ -6,3 +6,4 @@ res://scenes/match_setup.tscn
 res://scenes/Global.tscn
 res://godot_script/match_setup.gd
 res://godot_script/GameController.gd
+res://godot_script/window_errormsg.gd

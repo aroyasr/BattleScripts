@@ -8,6 +8,9 @@
 # 4. The file must not contain any prohibited imports (e.g., os, sys).
 # 5. The filename must end with .py extension.
 
+
+# This file was heavily vibecoded thank you copilot!
+
 import sys
 import ast
 import re
