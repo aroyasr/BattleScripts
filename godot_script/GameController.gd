@@ -12,9 +12,9 @@ func _ready() -> void:
 	change_ui_scene("res://scenes/main_menu.tscn")
 
 func change_ui_scene(new_scene_path: String):
-	var old_scene = ui.get_child(0)
+	if ui.get_child_count() > 0:
+		var old_scene = ui.get_child(0)
+		old_scene.queue_free()
 	var new_scene = load(new_scene_path).instantiate()
 	current_ui_scene = new_scene
 	ui.add_child(new_scene)
-	if old_scene != null:
-		old_scene.queue_free()

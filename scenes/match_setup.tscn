@@ -74,7 +74,7 @@ text = "P1"
 layout_mode = 2
 text = "Load File"
 
-[node name="TextureButton_p1" type="TextureButton" parent="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P1"]
+[node name="button_clearfilep1" type="TextureButton" parent="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P1"]
 visible = false
 custom_minimum_size = Vector2(100, 120)
 layout_mode = 2
@@ -99,11 +99,11 @@ layout_mode = 2
 text = "P2"
 
 [node name="button_loadfilep2" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P2"]
-visible = false
 layout_mode = 2
 text = "Load File"
 
-[node name="TextureButton_p2" type="TextureButton" parent="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P2"]
+[node name="button_clearfilep2" type="TextureButton" parent="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P2"]
+visible = false
 custom_minimum_size = Vector2(100, 120)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -115,6 +115,7 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="ScriptName" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P2"]
+visible = false
 layout_mode = 2
 text = "Rude.py"
 
@@ -131,10 +132,30 @@ layout_mode = 2
 text = "Start Game"
 
 [node name="tuhuratech_logo" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = 1415.0
 offset_top = 930.0
 offset_right = 1915.0
 offset_bottom = 1075.0
 texture = ExtResource("4_difc1")
 
+[node name="FD_loadp1" type="FileDialog" parent="."]
+initial_position = 2
+size = Vector2i(1000, 575)
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+
+[node name="FD_loadp2" type="FileDialog" parent="."]
+auto_translate_mode = 1
+initial_position = 2
+size = Vector2i(1000, 575)
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+
 [connection signal="pressed" from="Button_back" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P1/button_loadfilep1" to="." method="_on_button_loadfilep_1_pressed"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P2/button_loadfilep2" to="." method="_on_button_loadfilep_2_pressed"]
+[connection signal="file_selected" from="FD_loadp1" to="." method="_on_fd_loadp_1_file_selected"]
+[connection signal="file_selected" from="FD_loadp2" to="." method="_on_fd_loadp_1_file_selected"]
