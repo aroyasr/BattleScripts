@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://bigcta6kjekln"]
+[gd_scene load_steps=36 format=3 uid="uid://bigcta6kjekln"]
 
 [ext_resource type="Script" uid="uid://25i5kyy884gx" path="res://godot_script/match.gd" id="1_mv342"]
 [ext_resource type="FontFile" uid="uid://ci74i11770cx5" path="res://Assets/FaceType - PublicaPlay-Regular.otf" id="1_t0cgm"]
@@ -407,6 +407,8 @@ _data = {
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jatkr"]
 
+[sub_resource type="PyScriptExtension" id="PyScriptExtension_4bnf7"]
+
 [node name="Match" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -686,6 +688,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="PythonManager" type="Node" parent="."]
+script = SubResource("PyScriptExtension_4bnf7")
 
 [connection signal="pressed" from="Button_next" to="." method="_on_button_next_pressed"]
 [connection signal="pressed" from="Button_exit" to="." method="_on_button_exit_pressed"]

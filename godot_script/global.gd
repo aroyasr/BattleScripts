@@ -4,6 +4,11 @@ extends Node
 
 var game_controller : GameController
 
+var p1_script_path: String
+var p1_script_name: String
+var p2_script_path: String
+var p2_script_name: String
+
 func _ready():
 	game_controller = get_parent().get_child(1)
 
