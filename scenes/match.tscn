@@ -1,0 +1,247 @@
+[gd_scene load_steps=13 format=3 uid="uid://bigcta6kjekln"]
+
+[ext_resource type="FontFile" uid="uid://ci74i11770cx5" path="res://Assets/FaceType - PublicaPlay-Regular.otf" id="1_t0cgm"]
+[ext_resource type="Texture2D" uid="uid://dhnr7d0wq6y6w" path="res://Assets/python.png" id="2_5rc6j"]
+[ext_resource type="StyleBox" uid="uid://ckedbw0peroyw" path="res://Assets/button_pressed.tres" id="2_dtxuj"]
+[ext_resource type="Theme" uid="uid://cpbrcfvqb8ah7" path="res://Assets/turn_counter.tres" id="3_5rc6j"]
+[ext_resource type="StyleBox" uid="uid://cmq0q1f1lb7qk" path="res://Assets/button.tres" id="3_mv342"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6dstc"]
+content_margin_left = 50.0
+content_margin_top = 50.0
+content_margin_right = 50.0
+content_margin_bottom = 50.0
+bg_color = Color(0.386359, 0.604804, 0.382797, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+anti_aliasing = false
+anti_aliasing_size = 2.0
+
+[sub_resource type="Theme" id="Theme_su80s"]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 45
+Button/fonts/font = ExtResource("1_t0cgm")
+Button/styles/hover = SubResource("StyleBoxFlat_6dstc")
+Button/styles/hover_pressed = ExtResource("2_dtxuj")
+Button/styles/normal = ExtResource("3_mv342")
+Button/styles/pressed = ExtResource("2_dtxuj")
+Label/font_sizes/font_size = 45
+Label/fonts/font = ExtResource("1_t0cgm")
+
+[sub_resource type="LabelSettings" id="LabelSettings_dtxuj"]
+font = ExtResource("1_t0cgm")
+font_size = 100
+
+[sub_resource type="Gradient" id="Gradient_su80s"]
+offsets = PackedFloat32Array(0.189394, 0.348485, 0.647727, 0.772727)
+colors = PackedColorArray(1, 1, 1, 1, 0.415686, 0.643137, 0.411765, 1, 0.415686, 0.643137, 0.411765, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_dtxuj"]
+gradient = SubResource("Gradient_su80s")
+fill_from = Vector2(0.521368, 1)
+fill_to = Vector2(0.521368, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mv342"]
+font = ExtResource("1_t0cgm")
+font_size = 70
+
+[sub_resource type="LabelSettings" id="LabelSettings_t0cgm"]
+font = ExtResource("1_t0cgm")
+font_size = 150
+
+[node name="Match" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_vertical_guides_ = [960.0, 640.0, 1280.0]
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
+theme = SubResource("Theme_su80s")
+
+[node name="VBoxContainer_p1" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_top = 250.0
+offset_right = 640.0
+offset_bottom = -100.0
+grow_vertical = 2
+alignment = 1
+
+[node name="p1_name_label" type="Label" parent="Control/VBoxContainer_p1"]
+layout_mode = 2
+text = "Selfish"
+label_settings = SubResource("LabelSettings_dtxuj")
+horizontal_alignment = 1
+
+[node name="ImageContainer" type="CenterContainer" parent="Control/VBoxContainer_p1"]
+custom_minimum_size = Vector2(220, 260)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer_p1/ImageContainer"]
+custom_minimum_size = Vector2(200, 240)
+layout_mode = 2
+texture = ExtResource("2_5rc6j")
+
+[node name="p1_money_label" type="Label" parent="Control/VBoxContainer_p1"]
+layout_mode = 2
+text = "Money: $0"
+horizontal_alignment = 1
+
+[node name="Gap" type="Control" parent="Control/VBoxContainer_p1"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="p1_steal_label" type="Label" parent="Control/VBoxContainer_p1"]
+layout_mode = 2
+text = "Times steal chosen: 0"
+horizontal_alignment = 1
+
+[node name="p1_support_label" type="Label" parent="Control/VBoxContainer_p1"]
+layout_mode = 2
+text = "Times support chosen: 0"
+horizontal_alignment = 1
+
+[node name="VBoxContainer_p2" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -640.0
+offset_top = 250.0
+offset_bottom = -100.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="p2_name_label" type="Label" parent="Control/VBoxContainer_p2"]
+layout_mode = 2
+text = "Kind"
+label_settings = SubResource("LabelSettings_dtxuj")
+horizontal_alignment = 1
+
+[node name="ImageContainer" type="CenterContainer" parent="Control/VBoxContainer_p2"]
+custom_minimum_size = Vector2(220, 260)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer_p2/ImageContainer"]
+custom_minimum_size = Vector2(200, 240)
+layout_mode = 2
+texture = ExtResource("2_5rc6j")
+
+[node name="p1_money_label" type="Label" parent="Control/VBoxContainer_p2"]
+layout_mode = 2
+text = "Money: $0"
+horizontal_alignment = 1
+
+[node name="Gap" type="Control" parent="Control/VBoxContainer_p2"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="p1_steal_label" type="Label" parent="Control/VBoxContainer_p2"]
+layout_mode = 2
+text = "Times steal chosen: 0"
+horizontal_alignment = 1
+
+[node name="p1_support_label" type="Label" parent="Control/VBoxContainer_p2"]
+layout_mode = 2
+text = "Times support chosen: 0"
+horizontal_alignment = 1
+
+[node name="center_line" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="TextureRect" parent="Control/center_line"]
+custom_minimum_size = Vector2(0, 1080)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -540.0
+offset_right = 32.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_dtxuj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/center_line"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -27.0
+offset_right = 20.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control/center_line/VBoxContainer"]
+layout_mode = 2
+text = "Turn"
+label_settings = SubResource("LabelSettings_mv342")
+horizontal_alignment = 1
+
+[node name="turn_count_label" type="Label" parent="Control/center_line/VBoxContainer"]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+theme = ExtResource("3_5rc6j")
+text = "0"
+label_settings = SubResource("LabelSettings_t0cgm")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button_next" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -78.5
+offset_top = -205.0
+offset_right = 78.5
+offset_bottom = -91.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Next"
+
+[node name="Button_exit" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -114.0
+offset_right = 138.0
+grow_vertical = 0
+text = "Exit"
