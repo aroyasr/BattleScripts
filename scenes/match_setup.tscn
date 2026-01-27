@@ -128,7 +128,7 @@ text = "Autoplay"
 layout_mode = 2
 text = "Record Match"
 
-[node name="Button" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons"]
+[node name="Button_startgame" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons"]
 layout_mode = 2
 text = "Start Game"
 
@@ -173,6 +173,7 @@ layout_mode = 2
 [connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P1/button_clearfilep1" to="." method="_on_button_clearfilep_1_pressed"]
 [connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P2/button_loadfilep2" to="." method="_on_button_loadfilep_2_pressed"]
 [connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/HBoxContainer_P2/button_clearfilep2" to="." method="_on_button_clearfilep_2_pressed"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/VBoxContainer/VBoxContainer_buttons/Button_startgame" to="." method="_on_button_startgame_pressed"]
 [connection signal="file_selected" from="FD_loadp1" to="." method="_on_fd_loadp_1_file_selected"]
 [connection signal="file_selected" from="FD_loadp2" to="." method="_on_fd_loadp_2_file_selected"]
 [connection signal="close_requested" from="Window_errormsg" to="Window_errormsg" method="_on_close_requested"]

@@ -1,12 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1769463812
+::res://::1769489075
 icon.svg::CompressedTexture2D/CompressedTexture2D::5472655624712540288::1768364259::1768364348::1::::<><><>0<>0<>f145bb6033f6e77ed5ab1df4f2b110f0<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 package-lock.json::JSON/JSON::-1::1768364259::0::1::::<><><>0<>0<><>::
-README.md::TextFile::-1::1768970788::0::1::::<><><>0<>0<><>::
+README.md::TextFile/TextFile::-1::1768970788::0::1::::<><><>0<>0<><>::
 StudentGuide.md::TextFile/TextFile::-1::1767743488::0::1::::<><><>0<>0<><>::
-::res://Assets/::1769470244
+::res://addons/::1769485097
+::res://addons/py4godot/::1769485275
+dependencies.txt::TextFile/TextFile::-1::1769485269::0::1::::<><><>0<>0<><>::
+export_py4godot.gd::GDScript/GDScript::2806229421960214109::1769485269::0::1::::<>EditorExportPlugin<><>0<>1<><>::
+export_py4godot_main.gd::GDScript/GDScript::933712564557925875::1769485269::0::1::::<>EditorPlugin<><>0<>1<><>::
+get_pip.py::PyScriptExtension::-1::1769485269::0::1::::<><><>0<>0<><>::
+install_dependencies.py::PyScriptExtension::-1::1769485269::0::1::::<><><>0<>0<><>::
+plugin.cfg::TextFile/TextFile::-1::1769485269::0::1::::<><><>0<>0<><>::
+python.gdextension::GDExtension/GDExtension::1236977504728496978::1769485269::0::1::::<><><>0<>0<><>::
+Python.svg::CompressedTexture2D/CompressedTexture2D::8598709018940660518::1769485269::1769485275::1::::<><><>0<>0<>d8cb02ac59608f903853890bdf3ade14<>res://.godot/imported/Python.svg-681cb785c113434a7384dcc1fd345d19.ctex::
+signal_script.py::PyScriptExtension::-1::1769485269::0::1::::<><><>0<>0<><>::
+::res://Assets/::1769489033
 1832-531-max.png::CompressedTexture2D/CompressedTexture2D::810772163498509081::1767744714::1768364348::1::::<><><>0<>0<>6e5c47ac7417d50685ab6f3a13dd1390<>res://.godot/imported/1832-531-max.png-74da349692e4186317de77048457c360.ctex::
-button.tres::StyleBoxFlat::5649685407156410466::1769469649::0::1::::<><><>0<>0<><>::
+button.tres::StyleBoxFlat::5649685407156410466::1769489033::0::1::::<><><>0<>0<><>::
 button_hover.tres::StyleBoxFlat/StyleBoxFlat::8088898432707831463::1768875084::0::1::::<><><>0<>0<><>::
 button_pressed.tres::StyleBoxFlat/StyleBoxFlat::5483172446376344806::1768875098::0::1::::<><><>0<>0<><>::
 Checkbox_Checked.png::CompressedTexture2D/CompressedTexture2D::7859117963063925295::1768876842::1768876842::1::::<><><>0<>0<>f21a2d391d7e4eb62af15fd6e872d873<>res://.godot/imported/Checkbox_Checked.png-de6783651976c4ed35a39ae7a0252c8a.ctex::
@@ -14,27 +25,35 @@ Checkbox_empty.png::CompressedTexture2D/CompressedTexture2D::9020971965793216661
 FaceType - PublicaPlay-Regular.otf::FontFile/FontFile::5402188691031541244::1768364259::1768364348::1::::<><><>0<>0<>231fc4157ec19efea6b90cdbdcd0d7ac<>res://.godot/imported/FaceType - PublicaPlay-Regular.otf-e76b9cfc59fe22991c2cf8aee9b156d6.fontdata::
 gear.png::CompressedTexture2D/CompressedTexture2D::8719727231364497980::1768872713::1768872714::1::::<><><>0<>0<>52296e6dcfa5578c5233bc53816eeb07<>res://.godot/imported/gear.png-efdc5b345d356f8bfbdc749f755a770d.ctex::
 half-txt-dm-fix.png::CompressedTexture2D/CompressedTexture2D::4507626964431554781::1768369479::1768369487::1::::<><><>0<>0<>41b06401446ab1769d1db69e8781f8e5<>res://.godot/imported/half-txt-dm-fix.png-67c88af0882959dac1c79fae7764e1a0.ctex::
-match_theme.tres::Theme::4614592039158570768::1769463984::0::1::::<><><>0<>0<><>::uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf<>uid://dnik8fsqsvw5l::::res://Assets/button_hover.tres<>uid://cmq0q1f1lb7qk::::res://Assets/button.tres<>uid://dj8ar3pw2lkhr::::res://Assets/Checkbox_Checked.png<>uid://d1r3dcm87kbmj::::res://Assets/Checkbox_empty.png
-menu_theme.tres::Theme::4169277716183471977::1769463984::0::1::::<><><>0<>0<><>::uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf
-PixelOperatorMono-Bold.ttf::FontFile::3955747653111715173::1769470244::1769470244::1::::<><><>0<>0<>a7084781fd0d2bd571dd30e52abc8d9a<>res://.godot/imported/PixelOperatorMono-Bold.ttf-8de7143ff4a2c29165c88232b5653f3c.fontdata::
+match_theme.tres::Theme::4614592039158570768::1769489033::0::1::::<><><>0<>0<><>::uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf<>uid://dnik8fsqsvw5l::::res://Assets/button_hover.tres<>uid://cmq0q1f1lb7qk::::res://Assets/button.tres<>uid://dj8ar3pw2lkhr::::res://Assets/Checkbox_Checked.png<>uid://d1r3dcm87kbmj::::res://Assets/Checkbox_empty.png
+menu_theme.tres::Theme::4169277716183471977::1769489033::0::1::::<><><>0<>0<><>::uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf
+PixelOperatorMono-Bold.ttf::FontFile/FontFile::3955747653111715173::1769472839::1769472843::1::::<><><>0<>0<>a7084781fd0d2bd571dd30e52abc8d9a<>res://.godot/imported/PixelOperatorMono-Bold.ttf-8de7143ff4a2c29165c88232b5653f3c.fontdata::
 python.png::CompressedTexture2D/CompressedTexture2D::7678510398842662284::1768872709::1768872710::1::::<><><>0<>0<>0866f0d0874d48d49750a616d6589e25<>res://.godot/imported/python.png-fdb89c63a15612e55b7ae73be1d738d6.ctex::
-turn_counter.tres::Theme::5828774455962831206::1769469229::0::1::::<><><>0<>0<><>::uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf
-::res://godot_script/::1768972836
+turn_counter.tres::Theme::5828774455962831206::1769489033::0::1::::<><><>0<>0<><>::uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf
+::res://godot_script/::1769485067
 cross.png::CompressedTexture2D/CompressedTexture2D::2512110967959754465::1768872716::1768872717::1::::<><><>0<>0<>53765d5d66c5d22256b5ad21718386c0<>res://.godot/imported/cross.png-436faa3e91b3f2c5b5e3ea9a1abc7cef.ctex::
-GameController.gd::GDScript::208069300902597132::1768966279::0::1::::GameController<>Node<><>0<>0<><>::
-global.gd::GDScript/GDScript::9113532695571238544::1768875372::0::1::::<>Node<><>0<>0<><>::
+GameController.gd::GDScript/GDScript::208069300902597132::1768966279::0::1::::GameController<>Node<><>0<>0<><>::
+global.gd::GDScript/GDScript::9113532695571238544::1769473989::0::1::::<>Node<><>0<>0<><>::
 main_menu.gd::GDScript/GDScript::7346247476839651777::1768874583::0::1::::<>Control<><>0<>0<><>::
-match_setup.gd::GDScript::2007507281662975663::1768972836::0::1::::<>Control<><>0<>0<><>::
-window_errormsg.gd::GDScript::8511214944333044013::1768972385::0::1::::<>Window<><>0<>0<><>::
+match.gd::GDScript/GDScript::1957569984052633711::1769485067::0::1::::<>Control<><>0<>0<><>::
+match_setup.gd::GDScript/GDScript::2007507281662975663::1769472970::0::1::::<>Control<><>0<>0<><>::
+turn_history.gd::GDScript/GDScript::4294430122139897742::1769478406::0::1::::<>Control<><>0<>0<><>::
+turn_history_cell.gd::GDScript/GDScript::2452963034048206134::1769472839::0::1::::TurnHistoryCell<>VBoxContainer<><>0<>0<><>::
+window_errormsg.gd::GDScript/GDScript::8511214944333044013::1769472839::0::1::::<>Window<><>0<>0<><>::
 ::res://python_script/::1768972168
-::res://scenes/::1769469750
-GameController.tscn::PackedScene::767594794523004977::1769467665::0::1::::<><><>0<>0<><>::uid://c714u4ixw5bs::::res://godot_script/GameController.gd
-Global.tscn::PackedScene::7964669867941321125::1769467665::0::1::::<><><>0<>0<><>::uid://d23ws1drey0ga::::res://godot_script/global.gd
-main_menu.tscn::PackedScene::913477212555892697::1769467665::0::1::::<><><>0<>0<><>::uid://b0nvnopbrupa4::::res://Assets/menu_theme.tres<>uid://dcwtvf1m0cwcf::::res://godot_script/main_menu.gd<>uid://cujhjosgr4r21::::res://Visual Mockups/MenuOverlay_1.png<>uid://bc67hfvb3x8nm::::res://Visual Mockups/MenuOverlay_2.png<>uid://cb8xwx5mjgma4::::res://Visual Mockups/MenuOverlay_3.png<>uid://b5hr7s53alprh::::res://Assets/half-txt-dm-fix.png
-match_setup.tscn::PackedScene::6871283868568994630::1769467665::0::1::::<><><>0<>0<><>::uid://b60lwleljs85q::::res://Assets/match_theme.tres<>uid://3upl7qn3g4bj::::res://godot_script/match_setup.gd<>uid://dhnr7d0wq6y6w::::res://Assets/python.png<>uid://bb15dokx3y6w0::::res://godot_script/cross.png<>uid://b5hr7s53alprh::::res://Assets/half-txt-dm-fix.png<>uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf<>uid://dnik8fsqsvw5l::::res://Assets/button_hover.tres<>uid://ckedbw0peroyw::::res://Assets/button_pressed.tres<>uid://cmq0q1f1lb7qk::::res://Assets/button.tres<>uid://dti5p4oni8nvh::::res://godot_script/window_errormsg.gd
-match.tscn::PackedScene::2960473111746932059::1769469649::0::1::::<><><>0<>0<><>::uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf<>uid://dhnr7d0wq6y6w::::res://Assets/python.png<>uid://ckedbw0peroyw::::res://Assets/button_pressed.tres<>uid://cpbrcfvqb8ah7::::res://Assets/turn_counter.tres<>uid://cmq0q1f1lb7qk::::res://Assets/button.tres
-turn_history_cell.tscn::PackedScene::6783420604758727981::1769469750::0::1::::<><><>0<>0<><>::
-turn_history.tscn::PackedScene::8922426650811482931::1769469747::0::1::::<><><>0<>0<><>::
+file_validator.py::PyScriptExtension::-1::1768972168::0::1::::<><><>0<>0<><>::
+gm_main.py::PyScriptExtension::-1::1768364259::0::1::::<><><>0<>0<><>::
+script_template.py::PyScriptExtension::-1::1768968325::0::1::::<><><>0<>0<><>::
+::res://scenes/::1769489089
+GameController.tscn::PackedScene/PackedScene::767594794523004977::1769484339::0::1::::<><><>0<>0<><>::uid://c714u4ixw5bs::::res://godot_script/GameController.gd
+Global.tscn::PackedScene/PackedScene::7964669867941321125::1769484339::0::1::::<><><>0<>0<><>::uid://d23ws1drey0ga::::res://godot_script/global.gd
+main_menu.tscn::PackedScene/PackedScene::913477212555892697::1769484339::0::1::::<><><>0<>0<><>::uid://b0nvnopbrupa4::::res://Assets/menu_theme.tres<>uid://dcwtvf1m0cwcf::::res://godot_script/main_menu.gd<>uid://cujhjosgr4r21::::res://Visual Mockups/MenuOverlay_1.png<>uid://bc67hfvb3x8nm::::res://Visual Mockups/MenuOverlay_2.png<>uid://cb8xwx5mjgma4::::res://Visual Mockups/MenuOverlay_3.png<>uid://b5hr7s53alprh::::res://Assets/half-txt-dm-fix.png
+match.tscn::PackedScene::2960473111746932059::1769489033::0::1::::<><><>0<>0<><>::uid://25i5kyy884gx::::res://godot_script/match.gd<>uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf<>uid://dhnr7d0wq6y6w::::res://Assets/python.png<>uid://ckedbw0peroyw::::res://Assets/button_pressed.tres<>uid://cpbrcfvqb8ah7::::res://Assets/turn_counter.tres<>uid://cmq0q1f1lb7qk::::res://Assets/button.tres<>uid://d0edcfie6q8ux::::res://scenes/turn_history.tscn<>uid://bwmgt6knwlbpl::::res://Assets/PixelOperatorMono-Bold.ttf<>uid://dwh5vsmmi5opw::::res://Assets/gear.png
+match_setup.tscn::PackedScene/PackedScene::6871283868568994630::1769484339::0::1::::<><><>0<>0<><>::uid://b60lwleljs85q::::res://Assets/match_theme.tres<>uid://3upl7qn3g4bj::::res://godot_script/match_setup.gd<>uid://dhnr7d0wq6y6w::::res://Assets/python.png<>uid://bb15dokx3y6w0::::res://godot_script/cross.png<>uid://b5hr7s53alprh::::res://Assets/half-txt-dm-fix.png<>uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf<>uid://dnik8fsqsvw5l::::res://Assets/button_hover.tres<>uid://ckedbw0peroyw::::res://Assets/button_pressed.tres<>uid://cmq0q1f1lb7qk::::res://Assets/button.tres<>uid://dti5p4oni8nvh::::res://godot_script/window_errormsg.gd
+python_manager.py::PyScriptExtension::-1::1769489089::0::1::::<><><>0<>0<><>::
+turn_history.tscn::PackedScene/PackedScene::8922426650811482931::1769484339::0::1::::<><><>0<>0<><>::uid://b2givwamq3qos::::res://godot_script/turn_history.gd<>uid://c3v67f58xq062::::res://scenes/turn_history_cell.tscn<>uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf
+turn_history_cell.tscn::PackedScene/PackedScene::6783420604758727981::1769484339::0::1::::<><><>0<>0<><>::uid://ba7h7b4mchqvu::::res://godot_script/turn_history_cell.gd<>uid://ci74i11770cx5::::res://Assets/FaceType - PublicaPlay-Regular.otf<>uid://bwmgt6knwlbpl::::res://Assets/PixelOperatorMono-Bold.ttf
+::res://scenes/__pycache__/::1769489089
 ::res://Visual Mockups/::1768364348
 Main Menu Mockup.png::CompressedTexture2D/CompressedTexture2D::4786227959200678965::1767746044::1768364348::1::::<><><>0<>0<>084acb24dacb64aba861fa65c8bde014<>res://.godot/imported/Main Menu Mockup.png-1267e7a751893ec7f9e35511ccd57980.ctex::
 MenuOverlay_1.png::CompressedTexture2D/CompressedTexture2D::6195639494457769260::1767745996::1768364348::1::::<><><>0<>0<>5ea68c008b5103d024f41e54f427925a<>res://.godot/imported/MenuOverlay_1.png-e1d9a1424c978d85ca163942148d58e0.ctex::

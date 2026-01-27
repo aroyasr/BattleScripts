@@ -112,3 +112,7 @@ func _on_fd_loadp_2_file_selected(path: String) -> void:
 		p2_fileLabel.visible = true
 		p2_clearButton.visible = true
 		p2_loadButton.visible = false
+
+
+func _on_button_startgame_pressed() -> void:
+	Root.game_controller.change_ui_scene("res://scenes/match.tscn")
