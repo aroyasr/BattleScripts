@@ -1,3 +1,4 @@
+PythonFriend
 Node
 AnimationPlayer
 TextureRect
@@ -12,4 +13,3 @@ ColorRect
 Control
 PanelContainer
 Window
-Popup

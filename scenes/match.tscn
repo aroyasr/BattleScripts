@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://d0edcfie6q8ux" path="res://scenes/turn_history.tscn" id="5_6dstc"]
 [ext_resource type="FontFile" uid="uid://bwmgt6knwlbpl" path="res://Assets/PixelOperatorMono-Bold.ttf" id="8_4bnf7"]
 [ext_resource type="Texture2D" uid="uid://dwh5vsmmi5opw" path="res://Assets/gear.png" id="8_et4mf"]
+[ext_resource type="Script" uid="uid://ba0ok65y3b84x" path="res://addons/python_friend/python_friend.gd" id="10_d32o3"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6dstc"]
 
@@ -407,8 +408,6 @@ _data = {
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jatkr"]
 
-[sub_resource type="PyScriptExtension" id="PyScriptExtension_4bnf7"]
-
 [node name="Match" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -687,8 +686,9 @@ label_settings = SubResource("LabelSettings_gjxav")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PythonManager" type="Node" parent="."]
-script = SubResource("PyScriptExtension_4bnf7")
+[node name="PythonFriend" type="Node" parent="."]
+script = ExtResource("10_d32o3")
+metadata/_custom_type_script = "uid://ba0ok65y3b84x"
 
 [connection signal="pressed" from="Button_next" to="." method="_on_button_next_pressed"]
 [connection signal="pressed" from="Button_exit" to="." method="_on_button_exit_pressed"]

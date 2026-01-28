@@ -1,8 +1,5 @@
-res://scenes/match_setup.tscn
+res://scenes/match.tscn
 res://Assets/menu_theme.tres
 res://Assets/button.tres
 res://Assets/match_theme.tres
 res://Assets/turn_counter.tres
-res://godot_script/global.gd
-res://python_script/python_manager.py
-res://scenes/match.tscn
