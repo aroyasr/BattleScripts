@@ -115,4 +115,9 @@ func _on_fd_loadp_2_file_selected(path: String) -> void:
 
 
 func _on_button_startgame_pressed() -> void:
-	Root.game_controller.change_ui_scene("res://scenes/match.tscn")
+	if p1_filepath != null && p2_filepath != null:
+		Root.p1_script_name = p1_filename
+		Root.p1_script_path = p1_filepath
+		Root.p2_script_name = p2_filename
+		Root.p2_script_path = p2_filepath
+		Root.game_controller.change_ui_scene("res://scenes/match.tscn")

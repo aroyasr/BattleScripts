@@ -4,12 +4,12 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import messagebox
 
-app_name = ""
+app_name = "Godot"
 
 debug_enabled = True
 
-godot_data_dir = Path(user_data_dir("godot/app_userdata"))
-app_data_dir = godot_data_dir / app_name
+godot_data_dir = Path(user_data_dir("app_userdata", app_name, roaming=True))
+app_data_dir = godot_data_dir
 
 func_map = {}
 

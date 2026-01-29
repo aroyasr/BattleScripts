@@ -1,5 +1,11 @@
-res://scenes/match.tscn
+res://scenes/GameController.tscn
 res://Assets/menu_theme.tres
 res://Assets/button.tres
 res://Assets/match_theme.tres
 res://Assets/turn_counter.tres
+res://scenes/main_menu.tscn
+res://scenes/match_setup.tscn
+res://scenes/Global.tscn
+res://scenes/match.tscn
+res://scenes/turn_history.tscn
+res://scenes/turn_history_cell.tscn

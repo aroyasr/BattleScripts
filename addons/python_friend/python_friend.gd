@@ -3,7 +3,7 @@ extends Node
 
 ## Path to the Python interpreter of a virtual environment [br] [br]
 ## Example:[br]res://addons/python_friend/python_stuff/venv/bin/python3
-@export_file("*") var python_interpreter: String
+@export_file("*") var python_interpreter: String = "res://addons/python_friend/python_stuff/venv/Scripts/python.exe"
 ## Path to the main Python file [br] [br]
 ## Example:[br]res://addons/python_friend/python_stuff/main.py
 @export_file("*.py") var python_main_file: String = "res://addons/python_friend/python_stuff/main.py"
@@ -13,6 +13,9 @@ extends Node
 ## Windows: py_backend.exe [br] [br]
 ## Note: This executable must be in the same folder as the Godot app
 @export var exec_file_name: String = "py_backend.exe"
+
+## Folder of the comm_channel.json file
+
 
 ## Emitted when Godot receives the output from Python[br] [br]
 ## [param output] - [Dictionary] with the received data from Python
@@ -48,6 +51,7 @@ func generate_python_input(function: String, params) -> void:
 
 
 func read_python_output() -> Dictionary:
+	print("User path: "+ ProjectSettings.globalize_path("user://comm_channel.json"))
 	var file = FileAccess.open("user://comm_channel.json", FileAccess.READ)
 	if file:
 		var content = file.get_as_text()
