@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://bigcta6kjekln"]
+[gd_scene load_steps=37 format=3 uid="uid://bigcta6kjekln"]
 
 [ext_resource type="Script" uid="uid://25i5kyy884gx" path="res://godot_script/match.gd" id="1_mv342"]
 [ext_resource type="FontFile" uid="uid://ci74i11770cx5" path="res://Assets/FaceType - PublicaPlay-Regular.otf" id="1_t0cgm"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://d0edcfie6q8ux" path="res://scenes/turn_history.tscn" id="5_6dstc"]
 [ext_resource type="FontFile" uid="uid://bwmgt6knwlbpl" path="res://Assets/PixelOperatorMono-Bold.ttf" id="8_4bnf7"]
 [ext_resource type="Texture2D" uid="uid://dwh5vsmmi5opw" path="res://Assets/gear.png" id="8_et4mf"]
+[ext_resource type="Script" uid="uid://ba0ok65y3b84x" path="res://addons/python_friend/python_friend.gd" id="10_d32o3"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6dstc"]
 
@@ -62,6 +63,11 @@ font_size = 70
 [sub_resource type="LabelSettings" id="LabelSettings_t0cgm"]
 font = ExtResource("1_t0cgm")
 font_size = 150
+
+[sub_resource type="LabelSettings" id="LabelSettings_d32o3"]
+font = ExtResource("8_4bnf7")
+font_size = 64
+font_color = Color(0.341176, 0.541176, 1, 0)
 
 [sub_resource type="Animation" id="Animation_mlbdm"]
 length = 0.001
@@ -120,10 +126,10 @@ tracks/4/path = NodePath("AnimationPlayer/Support_p2:label_settings")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": []
+"values": [SubResource("LabelSettings_d32o3")]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -681,11 +687,17 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_jatkr")
 text = "Support!"
-label_settings = SubResource("LabelSettings_gjxav")
+label_settings = SubResource("LabelSettings_d32o3")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PythonManager" type="Node" parent="."]
+[node name="PythonFriend" type="Node" parent="."]
+script = ExtResource("10_d32o3")
+python_interpreter = null
+python_main_file = null
+exec_file_name = null
+metadata/_custom_type_script = "uid://ba0ok65y3b84x"
 
 [connection signal="pressed" from="Button_next" to="." method="_on_button_next_pressed"]
 [connection signal="pressed" from="Button_exit" to="." method="_on_button_exit_pressed"]
+[connection signal="python_output" from="PythonFriend" to="." method="_on_python_friend_python_output"]
