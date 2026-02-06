@@ -7,13 +7,13 @@ class_name TurnHistoryCell
 
 const turnHistoryCell = preload("res://scenes/turn_history_cell.tscn")
 
-@onready var label_turn = $VBoxContainer/Label_grid1
-@onready var label_p1money = $VBoxContainer/Label_grid2/Money_p1
-@onready var label_p1steal = $VBoxContainer/Label_grid2/Steal_p1
-@onready var label_p1support = $VBoxContainer/Label_grid2/Support_p1
-@onready var label_p2money = $VBoxContainer/Label_grid3/Money_p2
-@onready var label_p2steal = $VBoxContainer/Label_grid3/Steal_p2
-@onready var label_p2support = $VBoxContainer/Label_grid3/Support_p2
+@onready var label_turn = $Label_grid1
+@onready var label_p1money = $Label_grid2/Money_p1
+@onready var label_p1steal = $Label_grid2/Steal_p1
+@onready var label_p1support = $Label_grid2/Support_p1
+@onready var label_p2money = $Label_grid3/Money_p2
+@onready var label_p2steal = $Label_grid3/Steal_p2
+@onready var label_p2support = $Label_grid3/Support_p2
 
 static func create(turn: int, p1_choice: int, p1_money_earned: int,
 					p2_choice: int, p2_money_earned: int):
