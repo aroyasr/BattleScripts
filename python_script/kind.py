@@ -22,7 +22,7 @@
 STEAL = 0       # Don't change these numbers...
 SUPPORT = 1     # Unless you like ugly code and confusing yourself!
 
-# Variables (Do not modify - These are updated automatically each turn by the game manager. Do not change them here.)
+# Variables (Do not modify)
 my_money = 0          #How much money your script currently has in the match
 their_money = 0       #How much money the other script currently has in the match
 
@@ -32,7 +32,7 @@ my_move_history = []        #Array containing your previous moves
 their_move_history = []     #Array containing the other script's previous moves
 
 
-# Custom Variables (Insert your variables here! Any variables you  want to use in your strategy can be declared here.)
+### Custom Variables (Insert your variables here)
 meaning_of_life = 42
 
 

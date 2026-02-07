@@ -4,12 +4,12 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import messagebox
 
-app_name = ""
+app_name = "Godot"
 
 debug_enabled = True
 
-godot_data_dir = Path(user_data_dir("godot/app_userdata"))
-app_data_dir = godot_data_dir / app_name
+godot_data_dir = Path(user_data_dir("app_userdata", app_name, roaming=True))
+app_data_dir = godot_data_dir
 
 func_map = {}
 
@@ -39,13 +39,8 @@ def get_comm_channel_input():
 	show_debug_message(f"Checking for comm_channel.json at: {comm_channel_file}")
 
 	if comm_channel_file.exists():
-
 		with open(comm_channel_file, 'r') as file:
 			data = json.load(file)
-
-			with open(comm_channel_file, 'w') as clear_file:
-				clear_file.write("")
-
 			show_debug_message(f"comm_channel.json found and read: {data}")
 			return data
 

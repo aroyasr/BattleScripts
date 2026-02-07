@@ -16,28 +16,37 @@ var current_state: matchState = matchState.AWAIT_INPUT
 var next_pressed: bool = false
 var result_received: bool = false
 
+var match_data: Dictionary
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	$PythonFriend.python_init("init", {"script1_path": Root.p1_script_path, "script2_path": Root.p2_script_path, "GD_OUTPUT": "true", "PY_OUTPUT": "false"})
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	if next_pressed:
+	if next_pressed && current_state == matchState.AWAIT_INPUT:
 		next_pressed = false
 		change_state(matchState.GET_RESULT)
 	
 	if current_state == matchState.AWAIT_INPUT:
 		return
 	
+	# write to comm file to run next turn
 	if current_state == matchState.GET_RESULT:
-		pass
+		$PythonFriend.python_run("get_turn_results", {"GD_OUTPUT": "true", "PY_OUTPUT": "false"})
 	
+	# read comm file until python output saved
 	if current_state == matchState.AWAIT_RESULT:
-		pass
+		while true:
+			var data = $PythonFriend.read_python_output()
+			if data["PY_OUTPUT"] == "true":
+				change_state(matchState.DISPLAY_RESULT)
+				match_data = data
+				break
 	
 	if current_state == matchState.DISPLAY_RESULT:
-		pass
+		print(match_data)
 
 
 func change_state(new_state: matchState):

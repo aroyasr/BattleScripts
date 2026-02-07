@@ -36,15 +36,7 @@ func generate_python_input(function: String, params) -> void:
 	var data = {"func": function, "params": params}
 	var file_path = "user://comm_channel.json"
 	
-	var file = FileAccess.open(file_path, FileAccess.READ)
-	if file:
-		file.close()
-	else:
-		file = FileAccess.open(file_path, FileAccess.WRITE)
-		if file:
-			file.close()
-	
-	file = FileAccess.open(file_path, FileAccess.READ_WRITE)
+	var file = FileAccess.open(file_path, FileAccess.WRITE)
 	if file:
 		file.store_string(JSON.stringify(data))
 		file.close()
@@ -59,7 +51,6 @@ func read_python_output() -> Dictionary:
 		var json_parser = JSON.new()
 		var error = json_parser.parse(content)
 		file.close()
-		
 		if error == OK:
 			return json_parser.get_data() 
 		else:

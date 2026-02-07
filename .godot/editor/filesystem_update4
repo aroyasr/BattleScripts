@@ -4,3 +4,12 @@ res://Assets/button.tres
 res://Assets/match_theme.tres
 res://Assets/turn_counter.tres
 res://addons/python_friend/python_friend.gd
+res://godot_script/match.gd
+res://godot_script/match_setup.gd
+res://godot_script/turn_history_cell.gd
+res://scenes/GameController.tscn
+res://scenes/main_menu.tscn
+res://scenes/match_setup.tscn
+res://scenes/Global.tscn
+res://scenes/turn_history.tscn
+res://scenes/turn_history_cell.tscn
