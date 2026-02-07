@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://bigcta6kjekln"]
+[gd_scene load_steps=36 format=3 uid="uid://bigcta6kjekln"]
 
 [ext_resource type="Script" uid="uid://25i5kyy884gx" path="res://godot_script/match.gd" id="1_mv342"]
 [ext_resource type="FontFile" uid="uid://ci74i11770cx5" path="res://Assets/FaceType - PublicaPlay-Regular.otf" id="1_t0cgm"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://d0edcfie6q8ux" path="res://scenes/turn_history.tscn" id="5_6dstc"]
 [ext_resource type="FontFile" uid="uid://bwmgt6knwlbpl" path="res://Assets/PixelOperatorMono-Bold.ttf" id="8_4bnf7"]
 [ext_resource type="Texture2D" uid="uid://dwh5vsmmi5opw" path="res://Assets/gear.png" id="8_et4mf"]
+[ext_resource type="Script" uid="uid://cfl8w7o6kbcct" path="res://addons/python_friend/python_friend.gd" id="10_d32o3"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6dstc"]
 
@@ -685,7 +686,9 @@ label_settings = SubResource("LabelSettings_gjxav")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PythonManager" type="Node" parent="."]
+[node name="PythonFriend" type="Node" parent="."]
+script = ExtResource("10_d32o3")
+metadata/_custom_type_script = "uid://cfl8w7o6kbcct"
 
 [connection signal="pressed" from="Button_next" to="." method="_on_button_next_pressed"]
 [connection signal="pressed" from="Button_exit" to="." method="_on_button_exit_pressed"]
