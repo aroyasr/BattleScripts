@@ -45,10 +45,7 @@ def steal_or_support():
     #This is example code; if this script has no money, it will STEAL. If this script
     #has any money, it will SUPPORT. It's a very simple script; there's better strategies.
     #You can safely delete these comments and the code inside the main function.
-    if my_money > 0:
-        return SUPPORT
-    else:
-        return STEAL
+    return SUPPORT
 
 
 

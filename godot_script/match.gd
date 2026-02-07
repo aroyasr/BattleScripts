@@ -15,7 +15,6 @@ enum matchState {
 var current_state: matchState = matchState.AWAIT_INPUT
 var next_pressed: bool = false
 var result_received: bool = false
-
 var match_data: Dictionary
 
 # Called when the node enters the scene tree for the first time.
@@ -35,22 +34,26 @@ func _process(_delta: float) -> void:
 	# write to comm file to run next turn
 	if current_state == matchState.GET_RESULT:
 		$PythonFriend.python_run("get_turn_results", {"GD_OUTPUT": "true", "PY_OUTPUT": "false"})
+		change_state(matchState.AWAIT_RESULT)
 	
 	# read comm file until python output saved
 	if current_state == matchState.AWAIT_RESULT:
-		while true:
+		while !result_received:
 			var data = $PythonFriend.read_python_output()
-			if data["PY_OUTPUT"] == "true":
+			if data.get("PY_OUTPUT") == "true":
 				change_state(matchState.DISPLAY_RESULT)
-				match_data = data
-				break
+				match_data = data.get("turn_results")
+				result_received = true
 	
 	if current_state == matchState.DISPLAY_RESULT:
+		result_received = false
 		print(match_data)
+		change_state(matchState.AWAIT_INPUT)
 
 
 func change_state(new_state: matchState):
 	current_state = new_state
+	print(current_state)
 
 
 func _on_button_exit_pressed() -> void:

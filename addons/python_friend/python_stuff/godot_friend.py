@@ -6,7 +6,7 @@ from tkinter import messagebox
 
 app_name = "Godot"
 
-debug_enabled = True
+debug_enabled = False
 
 godot_data_dir = Path(user_data_dir("app_userdata", app_name, roaming=True))
 app_data_dir = godot_data_dir
